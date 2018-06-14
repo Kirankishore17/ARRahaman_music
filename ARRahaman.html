@@ -105,10 +105,11 @@ iframe{
     text-align:center;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 0px;
-    font-size: 45px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    font-size: 47px;
     font-family: Arial;
-    color: rgb(116, 39, 39);
+    color: rgb(131, 46, 46);
 }
 #movieplot {
     font-family: 'Times New Roman';
@@ -145,7 +146,7 @@ iframe{
 function choose(x){
     switch (x) {
         case 1:
-            text = ["Aayutha Ezhuthu","A.R.Rahaman","A goon, who dreams of making it big in life, a student leader, who strives to keep politicians away from college election and a third guy who wants to settle abroad. Their lives change after an incident on a bridge."];
+            text = ["Aayutha Ezhuthu","A.R. Rahman feat. Chinmayi, Qudir Khan, Murtaza Khan","A goon, who dreams of making it big in life, a student leader, who strives to keep politicians away from college election and a third guy who wants to settle abroad. Their lives change after an incident on a bridge."];
             break;
 
         case 2:
@@ -155,15 +156,35 @@ function choose(x){
         case 3:
             text = ["Guru","A.R. Rahman feat. Chinmayi, Qudir Khan, Murtaza Khan","Following the life of ambitious Gurukanth Desai on his rise to power as a successful business magnate in late 50s India. Through chance and cunning, Guru marries the beautiful Sujata for her dowry, only later to discover he really does love her."];
             break;
+
         case 4:
             text = ["Vinnaithaandi Varuvaayaa","Vijay Prakash, Suzanne & Blaaze","A Hindu assistant director, Karthik, falls in love with Jessie, a Christian. But when Karthik gets busy during a forty-day shoot in Goa, Jessie is forced to get married."];
             break;
+
         case 5:
             text = ["Jeans","Unnikrishnan & Sujatha","Viswanathan (Prashanth) and Ramamurthy or Ramu (Prashanth) are the twin sons of Nasser and the three of them manage an Indian restaurant in Los Angeles. Aishwarya Rai and her grandmother Lakshmi arrive in Los Angeles for an operation for Lakshmi and during their stay, romance blooms between Visu and Aishwarya."] 
             break;
+
         case 6:
             text = ["Sivaji: the boss"," S. P. Balasubrahmanyam, A. R. Reihana, Benny","Sivaji, returns from the US after having made money as an engineer. He sets out on his mission to build hospitals and colleges, providing free treatment and education and making India progress.Desperate to achieve his goals of making India progress, he is presented with trials and his enemies plot his downfall. What follows is the fight of a man who is determined to prove that goodness always wins."];
             break;
+
+        case 7:
+            text = ["Minsara Kanavu","Anuradha Sriram","Thomas loves Priya from their high school days but is afraid to confess. He asks Deva, a hairstylist, to help him to convince her but a tricky situation arises when she falls in love with Deva."];
+        break;
+
+        case 8:
+            text = ["Bombay","AR Rahman","Shekar (Arvind Swamy) and Shaila (Manisha Koirala) are in love.he is Hindu, she is Muslim -- they decide to run off and get married. They have twin sons and raise the boys to appreciate both of their families' faiths and cultures, but the civil unrest in Bombay results in a horrific situation that causes Shekar and Shahla's parents to set aside their differences in order to save their children and grandchildren."];
+        break;
+
+        case 9:
+            text = ["Tamil Anthem"," A. R. Rahman, T. M. Sounderajan, T. L. Maharajan, P. Susheela, Hariharan, Nithyasree Mahadevan, Chinna Ponnu, Srinivas, Blaaze, Karthik, Naresh Iyer, Chinmayi, Sweatha Mohan, Harini, Shruthi Hassan, Yuvan Shankar Raja, Vijay Yesudas, Gunasekaran, T. N. Krishnan, Aruna Sairam, Sowmya, G. V. Prakash","This is the theme song for the World Classical Tamil Conference to be held in Coimbatore in June 2010, encapsulating the contributions of Tamil culture and literature down the ages."];
+        break;
+
+        case 10: 
+            text = ["Slumdog Millionaire","A R Rahman ft. Sukhvinder Singh, Tanvi Shah & Mahalaxmi Iyer","As 18-year-old Jamal Malik (Dev Patel) answers questions on the Indian version of 'Who Wants to Be a Millionaire,' flashbacks show how he got there. Part of a stable of young thieves after their mother dies, Jamal and his brother, Salim, survive on the streets of Mumbai. Salim finds the life of crime agreeable, but Jamal scrapes by with small jobs until landing a spot on the game show."];
+        break;
+
     }
     document.getElementById("movietitle").innerHTML = text[0];
     document.getElementById("singer").innerHTML = text[1];
@@ -171,16 +192,16 @@ function choose(x){
 }
 </script>
 <body>
-
+   
 <div class="header">
   <h1><em>A.R.Rahaman music collection</em></h1>
   <i id ="giventitle"><b>Mozart of Madras</b></i>
 </div>
 
 <div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="https://twitter.com/arrahman">Twitter</a>
+  <a href="https://www.facebook.com/arrahman">Facebook</a>
+  <a href="https://www.youtube.com/channel/UC3mb5QRlm4VQmOZD_P0ctGw">You Tube</a>
   <a href="https://github.com/Kirankishore17" style="float:right">Github</a>
 </div>
 
@@ -200,12 +221,16 @@ function choose(x){
       </div>
 
     <!--list of songs-->
-      <p style="font-size: 18px">1. <a class="songselect" onclick="choose(1)" href="https://www.youtube.com/embed/UTGan1oJ3a8" target="box">Jana Gana Mana</a> from Aayutha Ezhuthu(2004)</p>
-      <p style="font-size: 18px">2. <a class="songselect" onclick="choose(2)" href="https://www.youtube.com/embed/vmSKUQHzbPw" target="box">Pudhu Vellai Mazhai</a> from Roja(1992)</p>
-      <p style="font-size: 18px">3. <a class="songselect" onclick="choose(3)" href="https://www.youtube.com/embed/_f8dMFzYRCE" target="box">Aaruyirae</a> from Guru(2006)</p>
-      <p style="font-size: 18px">4. <a class="songselect" onclick="choose(4)" href="https://www.youtube.com/embed/YFYiTS46x-8" target="box">Hosanna</a> from Vinnaithaandi Varuvaayaa(2010)</p>
-      <p style="font-size: 18px">5. <a class="songselect" onclick="choose(5)" href="https://www.youtube.com/embed/OEWH-4V151g" target="box">Poovukkul</a> from Jeans(1998)</p>
-      <p style="font-size: 18px">6. <a class="songselect" onclick="choose(6)" href="https://www.youtube.com/embed/J2GXBLVZk60" target="box">Balleilakka</a> from Sivaji:the boss(2007)</p>
+      <p style="font-size: 18px">1.  <a class="songselect" onclick="choose(1)" href="https://www.youtube.com/embed/UTGan1oJ3a8" target="box">Jana Gana Mana</a> from Aayutha Ezhuthu(2004)</p>
+      <p style="font-size: 18px">2.  <a class="songselect" onclick="choose(2)" href="https://www.youtube.com/embed/vmSKUQHzbPw" target="box">Pudhu Vellai Mazhai</a> from Roja(1992)</p>
+      <p style="font-size: 18px">3.  <a class="songselect" onclick="choose(3)" href="https://www.youtube.com/embed/_f8dMFzYRCE" target="box">Aaruyirae</a> from Guru(2006)</p>
+      <p style="font-size: 18px">4.  <a class="songselect" onclick="choose(4)" href="https://www.youtube.com/embed/YFYiTS46x-8" target="box">Hosanna</a> from Vinnaithaandi Varuvaayaa(2010)</p>
+      <p style="font-size: 18px">5.  <a class="songselect" onclick="choose(5)" href="https://www.youtube.com/embed/OEWH-4V151g" target="box">Poovukkul</a> from Jeans(1998)</p>
+      <p style="font-size: 18px">6.  <a class="songselect" onclick="choose(6)" href="https://www.youtube.com/embed/J2GXBLVZk60" target="box">Balleilakka</a> from Sivaji:the boss(2007)</p>
+      <p style="font-size: 18px">7.  <a class="songselect" onclick="choose(7)" href="https://www.youtube.com/embed/Z6fxhAO5bm8" target="box">Anbendra mazhaiyile</a> from Minsara kanavu(1997)</p>
+      <p style="font-size: 18px">8.  <a class="songselect" onclick="choose(8)" href="https://www.youtube.com/embed/OEWH-4V151g" target="box">Andha Arabi</a> from Bombay(1995)</p>
+      <p style="font-size: 18px">9.  <a class="songselect" onclick="choose(9)" href="https://www.youtube.com/embed/lRITPjraXgA" target="box">SemMozhi</a> from Tamil Anthem(2010)</p>
+      <p style="font-size: 18px">10. <a class="songselect" onclick="choose(10)" href="https://www.youtube.com/embed/UxLSZoFK8EM" target="box">Jai Ho</a> from Slumdog Millionaire(2009)</p>
 
 
     </div>
